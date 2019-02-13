@@ -1,3 +1,4 @@
 /.todos.json
 /.idea
 .DS_Store
+/hide_sys_template*.zip
