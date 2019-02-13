@@ -1,0 +1,41 @@
+* text eol=lf
+
+*.png binary
+*.jpg binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.otf binary
+*.ai binary
+*.pdf binary
+
+# Enforce checkout with linux lf consistent over all plattforms
+*.html text eol=lf
+*.css text eol=lf
+*.tmpl text eol=lf
+*.less text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.php text eol=lf
+*.rst text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.ts text eol=lf
+*.xlf text eol=lf
+*.sql text eol=lf
+*.t3s text eol=lf
+*.txt text eol=lf
+
+*.setupts text eol=lf
+*.constantsts text eol=lf
+*.tsc text eol=lf
+*.typoscript text eol=lf
+
+/.github/ export-ignore
+/.gitattributes export-ignore
+/.gitlab-ci.yml export-ignore
+/.scrutinizer export-ignore
+/.styleci.yml export-ignore
+/.travis.yml export-ignore
+/CONTRIBUTING.md export-ignore
