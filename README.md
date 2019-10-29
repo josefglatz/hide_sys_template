@@ -12,9 +12,17 @@ The recommended way to install the extension is by using
 [Composer](https://getcomposer.org/). In your Composer based TYPO3
 project root, just do `composer require josefglatz/hide-sys-template`
 
-#### for TYPO3 9.5LTS
+##### You want to update the extension with composer?
+
+Based on what version constraint is used in your composer.json you can
+use the following command to install the latest stable version:
 
 `composer require josefglatz/hide-sys-template`
+
+If you want to install or update to a specific version 1.1 and bugfix
+releases use the following command:
+
+`composer require josefglatz/hide-sys-template:1.1.*`
 
 
 ### Installation as extension from TYPO3 Extension Repository (TER)
@@ -37,9 +45,9 @@ TYPO3 8 LTS. Everything is better since then!
 
 Register your hook
 `$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Core/TypoScript/TemplateService']['runThroughTemplatesPostProcessing']`
-in your sitepackage extension. All your TypoScript and sys_template
-relevant stuff is right in your sitepackage extension a.k.a. GIT
-repository. 🤩
+in your TYPO3 sitepackage extension. All your TypoScript and
+sys_template relevant stuff is right in your sitepackage extension
+a.k.a. GIT repository. 🤩
 
 ---
 
