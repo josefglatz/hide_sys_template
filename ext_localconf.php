@@ -1,8 +1,9 @@
 <?php
+/** @noinspection PhpFullyQualifiedNameUsageInspection */
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function ($extKey) {
+    static function ($extKey) {
 
         // Edit restriction for specific records / Enrich DataHandler while updating specific records
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass']['hide_sys_template'] =

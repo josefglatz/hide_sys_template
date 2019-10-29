@@ -17,6 +17,7 @@ class NewStandardTemplateHandler
      *
      * @param array $params
      * @param TypoScriptTemplateModuleController $parentObject
+     * @throws \TYPO3\CMS\Backend\Routing\Exception\RouteNotFoundException
      */
     public function restrict(array &$params, $parentObject): void
     {

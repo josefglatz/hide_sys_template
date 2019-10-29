@@ -45,4 +45,4 @@ repository. 🤩
 
 ## Created by
 
-http://josefglatz.at/
+<http://josefglatz.at/>

@@ -16,6 +16,7 @@ class ProcessDatamapDataHandler
      * Prevent creating a new sys_template record
      *
      * @param DataHandler $parentObject
+     * @throws \TYPO3\CMS\Backend\Routing\Exception\RouteNotFoundException
      */
     public function processDatamap_beforeStart(DataHandler $parentObject): void
     {

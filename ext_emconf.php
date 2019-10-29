@@ -1,4 +1,5 @@
 <?php
+/** @noinspection PhpUndefinedVariableInspection */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Hide sys_template in backend',
     'description' => 'Make sys_template records vanish everywhere (Prevents TYPO3 admins from using sys_template database records)',
