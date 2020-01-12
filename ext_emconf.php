@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'https://www.josefglatz.at',
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
-    'version' => '1.1.0',
+    'version' => '1.1.2',
     'constraints' =>
         [
             'depends' =>
