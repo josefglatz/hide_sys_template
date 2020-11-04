@@ -45,9 +45,10 @@ TYPO3 8 LTS. Everything is better since then!
 
 Register your hook
 `$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Core/TypoScript/TemplateService']['runThroughTemplatesPostProcessing']`
-in your TYPO3 sitepackage extension. All your TypoScript and
+in your TYPO3 sitepackage extension or use [b13/bolt](https://github.com/b13/bolt). All your TypoScript and
 sys_template relevant stuff is right in your sitepackage extension
-a.k.a. GIT repository. 🤩
+a.k.a. GIT repository. 🤩 (When using b13/bolt you're PageTSconfig is
+loaded automatically for great success)
 
 ---
 
