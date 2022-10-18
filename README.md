@@ -48,7 +48,7 @@ Via Composer:
 composer require josefglatz/professional-aspects --with-dependencies
 ```
 
-## Usage
+## 🏄‍ Usage
 
 1. Install the extension
 2. There is no second step. That's all.
