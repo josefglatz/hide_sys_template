@@ -29,7 +29,7 @@ class ProcessDatamapDataHandler
     public function processDatamap_beforeStart(DataHandler $parentObject)
     {
         if (isset($parentObject->datamap['sys_template'])
-            && str_starts_with(array_key_first($parentObject->datamap['sys_template']), 'NEW')) {
+            && str_starts_with((string)array_key_first($parentObject->datamap['sys_template']), 'NEW')) {
 
             /**
              * @var FlashMessage $message Error message to inform the backend user about the barrier
