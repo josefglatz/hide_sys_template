@@ -1,6 +1,6 @@
 <div align="center">
 
-![Extension icon](Resources/Public/Icons/Extension.svg){:height="36px" width="36px"}
+<img alt="Extension Icon" src="https://github.com/josefglatz/hide_sys_template/raw/main/Resources/Public/Icons/Extension.svg" width="200" height="200">
 
 # TYPO3 extension `hide_sys_template`
 
