@@ -1,5 +1,21 @@
 <?php
+
 declare(strict_types=1);
+
+/*
+ * This file is part of the TYPO3 CMS extension "josefglatz/hide-sys-template".
+ * Copyright (C) 2022 Josef Glatz <typo3@josefglatz.at>
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
 
 namespace JosefGlatz\HideSysTemplate\Hooks\Backend;
 
@@ -15,7 +31,6 @@ use TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateInformationModuleFunctionC
 
 /**
  * Class ProcessDatamapDataHandler
- * @package JosefGlatz\HideSystemplate\Hooks\Backend
  * @author Josef Glatz <typo3@josefglatz.at>
  */
 class ProcessDatamapDataHandler
@@ -23,7 +38,6 @@ class ProcessDatamapDataHandler
     /**
      * Prevent creating a new sys_template record
      *
-     * @param DataHandler $parentObject
      * @throws \TYPO3\CMS\Backend\Routing\Exception\RouteNotFoundException
      * @throws PropagateResponseException
      */
@@ -31,7 +45,6 @@ class ProcessDatamapDataHandler
     {
         if (isset($parentObject->datamap['sys_template'])
             && str_starts_with((string)array_key_first($parentObject->datamap['sys_template']), 'NEW')) {
-
             /**
              * @var FlashMessage $message Error message to inform the backend user about the barrier
              */
@@ -51,7 +64,7 @@ class ProcessDatamapDataHandler
                 'web_ts',
                 [
                     'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid'],
-                    'function' => TypoScriptTemplateInformationModuleFunctionController::class
+                    'function' => TypoScriptTemplateInformationModuleFunctionController::class,
                 ]
             );
             @ob_end_clean();
@@ -60,7 +73,6 @@ class ProcessDatamapDataHandler
                 ->withAddedHeader('location', GeneralUtility::locationHeaderUrl($redirectUri));
 
             throw new PropagateResponseException($response);
-
         }
     }
 
@@ -69,10 +81,6 @@ class ProcessDatamapDataHandler
      *
      * @noinspection PhpUnusedParameterInspection
      *
-     * @param $status
-     * @param $table
-     * @param $id
-     * @param $fieldArray
      * @param DataHandler $pObj
      */
     public function processDatamap_postProcessFieldArray($status, $table, $id, &$fieldArray, &$pObj): void
@@ -94,9 +102,6 @@ class ProcessDatamapDataHandler
         }
     }
 
-    /**
-     * @return LanguageService
-     */
     protected function getLanguageService(): LanguageService
     {
         return $GLOBALS['LANG'];
