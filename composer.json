@@ -28,6 +28,7 @@
         "typo3/cms-tstemplate": "^11.5"
     },
     "require-dev": {
+        "armin/editorconfig-cli": "^1.5",
         "ergebnis/composer-normalize": "^2.28",
         "typo3/coding-standards": "^0.5.5"
     },
