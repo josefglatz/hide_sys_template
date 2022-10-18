@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns:t3="http://typo3.org/schemas/xliff" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" original="messages" datatype="plaintext" date="2022-10-17T15:40:50+02:00">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="hooks.dataHandler.prevent.sys_template.title" resname="hooks.dataHandler.prevent.sys_template.title">
+				<source>Creating a sys_template record in the database is not allowed in this TYPO3 instance</source>
+			</trans-unit>
+			<trans-unit id="hooks.dataHandler.prevent.sys_template.description" resname="hooks.dataHandler.prevent.sys_template.description">
+				<source>Records in the database can not be versioned and offer potential for technical debts. Please add your changes through TypoScript files in your sitepackage extension and b13/bolt.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

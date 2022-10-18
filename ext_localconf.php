@@ -1,0 +1,18 @@
+<?php
+declare(strict_types=1);
+
+defined('TYPO3') or die();
+
+call_user_func(
+    static function ($extKey) {
+        // First level of restriction
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+            'mod.web_list.deniedNewTables := addToList(sys_template)'
+        );
+
+        // Edit restriction for specific records / Enrich DataHandler while updating specific records
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][$extKey] =
+            \JosefGlatz\HideSysTemplate\Hooks\Backend\ProcessDatamapDataHandler::class;
+    },
+    'hide_sys_template'
+);

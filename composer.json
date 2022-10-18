@@ -1,0 +1,33 @@
+{
+    "name": "josefglatz/hide-sys-template",
+    "description": "Make sys_template records vanish everywhere (Prevents TYPO3 admins from using sys_template database records)",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "authors": [
+        {
+            "name": "Josef Glatz",
+            "email": "typo3@josefglatz.at",
+            "homepage": "https://www.josefglatz.at",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "typo3/cms-core": "^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JosefGlatz\\HideSysTemplate\\": "Classes/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "hide_sys_template"
+        }
+    }
+}
