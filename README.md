@@ -6,7 +6,7 @@
 
 **:orange_book:&nbsp;[Documentation](https://docs.typo3.org/p/josefglatz/hide-sys-template/main/en-us/)** |
 :package:&nbsp;[Packagist](https://packagist.org/packages/josefglatz/hide-sys-template) |
-:hatched_chick:&nbsp;[TYPO3 extension repository](https://extensions.typo3.org/extension/warming) |
+:hatched_chick:&nbsp;[TYPO3 extension repository](https://extensions.typo3.org/extension/hide_sys_template) |
 :floppy_disk:&nbsp;[Repository](https://github.com/josefglatz/hide_sys_template) |
 :bug:&nbsp;[Issue tracker](https://github.com/josefglatz/hide_sys_template/issues)
 
