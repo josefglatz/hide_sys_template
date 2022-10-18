@@ -33,9 +33,23 @@
             "typo3/class-alias-loader": true
         }
     },
+    "scripts": {
+        "lint": [
+            "@lint:composer",
+            "@lint:editorconfig",
+            "@lint:php"
+        ],
+        "lint:composer": "@composer normalize --no-check-lock --no-update-lock",
+        "lint:editorconfig": "ec --finder-config .editorconfig-lint.php --fix",
+        "lint:php": "php-cs-fixer fix"
+    },
     "extra": {
         "typo3/cms": {
-            "extension-key": "hide_sys_template"
+            "extension-key": "hide_sys_template",
+            "web-dir": ".Build/web"
         }
+    },
+    "require-dev": {
+        "typo3/coding-standards": "^0.5.5"
     }
 }
