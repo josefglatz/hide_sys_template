@@ -16,6 +16,7 @@
     "require": {
         "php": "^8.0",
         "psr/http-message": "*",
+        "psr/http-factory": "*",
         "typo3/cms-core": "^11.5",
         "typo3/cms-backend": "^11.5",
         "typo3/cms-tstemplate": "^11.5"
