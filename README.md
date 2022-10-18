@@ -60,4 +60,4 @@ extension. Both extensions complement each other perfectly.
 
 This project is licensed under [GNU General Public License 2.0 (or later)](LICENSE.md).
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide-sys-template.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide-sys-template?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide_sys_template.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide_sys_template?ref=badge_large)
