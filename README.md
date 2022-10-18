@@ -1,7 +1,6 @@
 <div align="center">
-img[alt=Extension_icon] { width: 200px; }
 
-![Extension_icon](Resources/Public/Icons/Extension.svg)
+![Extension icon](Resources/Public/Icons/Extension.svg)
 
 # TYPO3 extension `hide_sys_template`
 
