@@ -6,7 +6,7 @@ namespace JosefGlatz\HideSysTemplate\EventListener;
 use Psr\Http\Message\ResponseFactoryInterface;
 use TYPO3\CMS\Backend\Controller\Event\BeforeFormEnginePageInitializedEvent;
 use TYPO3\CMS\Core\Localization\LanguageService;
-use TYPO3\CMS\Core\Messaging\FlashMessage as FlashMessageAlias;
+use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -53,15 +53,15 @@ class RenderFlashMessage
     protected function addFlashMessage(): void
     {
         /**
-         * @var FlashMessageAlias $message Error message to inform the backend user about the barrier
+         * @var FlashMessage $message Error message to inform the backend user about the barrier
          */
         $message = GeneralUtility::makeInstance(
-            FlashMessageAlias::class,
+            FlashMessage::class,
             htmlspecialchars($this->getLanguageService()
                 ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.description')),
             htmlspecialchars($this->getLanguageService()
                 ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.title')),
-            FlashMessageAlias::ERROR,
+            FlashMessage::ERROR,
             true
         );
         $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
