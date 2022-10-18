@@ -15,8 +15,6 @@
 An extension for TYPO3 CMS that prevents TYPO3 administrator users from using sys_template database records. Let's make
 sys_template database records vanish everywhere!
 
-<img alt="Extension Icon" src="https://github.com/josefglatz/hide_sys_template/raw/main/Documentation/Images/TypoScriptTemplateModule.gif" width="916" height="548">
-
 ## :rocket: Features
 
 * Use PageTSConfig `mod.web_list.deniedNewTables` as basic prevention
@@ -31,6 +29,8 @@ sys_template database records vanish everywhere!
 * Add logging and notifications to blame suspicious backend users
 
 _Contact me if you need that or other useful features!_
+
+<img alt="Extension Icon" src="https://github.com/josefglatz/hide_sys_template/raw/main/Documentation/Images/TypoScriptTemplateModule.gif" width="916" height="548">
 
 ## :fire: Installation
 
