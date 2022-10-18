@@ -5,6 +5,7 @@ namespace JosefGlatz\HideSysTemplate\EventListener;
 
 use Psr\Http\Message\ResponseFactoryInterface;
 use TYPO3\CMS\Backend\Controller\Event\BeforeFormEnginePageInitializedEvent;
+use TYPO3\CMS\Core\Http\PropagateResponseException;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
@@ -43,7 +44,7 @@ class RenderFlashMessage
                 ->createResponse(403)
                 ->withAddedHeader('location', $queryParams['returnUrl']);
 
-            return $response;
+            throw new PropagateResponseException($response);
         }
     }
 
