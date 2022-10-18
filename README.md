@@ -23,10 +23,12 @@ sys_template database records vanish everywhere!
 * Prevents showing the backend form for creating new sys_template database records
 * Informs a TYPO3 admin when add inline PageTSConfig to `pages.tsconfig_includes`
 
-**Planned features: (sponsoring wanted)**
+**Future features: (sponsoring needed)**
 
 * Command to check for sys_template records and sends notifications
 * Add logging and notifications to blame suspicious backend users
+
+_Contact me if you need that or other useful features!_
 
 ## :fire: Installation
 
