@@ -25,6 +25,7 @@ class ProcessDatamapDataHandler
      *
      * @param DataHandler $parentObject
      * @throws \TYPO3\CMS\Backend\Routing\Exception\RouteNotFoundException
+     * @throws PropagateResponseException
      */
     public function processDatamap_beforeStart(DataHandler $parentObject)
     {
