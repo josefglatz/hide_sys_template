@@ -20,6 +20,7 @@ sys_template database records vanish everywhere!
 * Use PageTSConfig `mod.web_list.deniedNewTables` as basic prevention
 * Prevents creating sys_template database records via TYPO3 backend module Template
 * Prevents creating sys_template database records via TYPO3 backend module List
+* Prevents showing the backend form for creating new sys_template database records
 * Informs a TYPO3 admin when add inline PageTSConfig to `pages.tsconfig_includes`
 
 **Planned features: (sponsoring wanted)**
