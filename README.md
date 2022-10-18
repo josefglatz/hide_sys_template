@@ -30,8 +30,6 @@ sys_template database records vanish everywhere!
 
 _Contact me if you need that or other useful features!_
 
-<img alt="Extension Icon" src="https://github.com/josefglatz/hide_sys_template/raw/main/Documentation/Images/TypoScriptTemplateModule.gif" width="916" height="548">
-
 ## :fire: Installation
 
 ### Standalone
@@ -66,3 +64,7 @@ extension. Both extensions complement each other perfectly.
 This project is licensed under [GNU General Public License 2.0 (or later)](LICENSE.md).
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide_sys_template.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjosefglatz%2Fhide_sys_template?ref=badge_large)
+
+## Screenshots
+
+<img alt="Extension Icon" src="https://github.com/josefglatz/hide_sys_template/raw/main/Documentation/Images/TypoScriptTemplateModule.gif" width="916" height="548">
