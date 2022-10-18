@@ -44,7 +44,3 @@ jobs:
         run: .Build/bin/ec --finder-config .editorconfig-lint.php
       - name: Lint PHP
         run: composer lint:php -- --dry-run
-
-      # SCA
-      - name: SCA PHP
-        run: composer sca:php -- --error-format github
