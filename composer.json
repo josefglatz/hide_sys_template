@@ -1,0 +1,48 @@
+{
+	"name": "josefglatz/hide-sys-template",
+	"license": "GPL-2.0",
+	"type": "typo3-cms-extension",
+	"description": "Hide sys_template in backend",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"productivity",
+		"integrators",
+		"improvements",
+		"backend"
+	],
+	"support": {
+		"issues": "https://github.com/josefglatz/hide_sys_template/issues",
+		"source": "https://github.com/josefglatz/hide_sys_template"
+	},
+	"authors": [
+		{
+			"name": "Josef Glatz",
+			"email": "josefglatz@gmail.com",
+			"homepage": "https://www.joseglatz.at",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://github.com/josefglatz/hide_sys_template",
+	"require": {
+		"php":"^7.2 || ^7.3 || ^7.4",
+		"typo3/cms-core": "^10"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-master",
+		"namelesscoder/typo3-repository-client": "^2.0",
+		"mikey179/vfsstream": "~1.6.0",
+		"phpunit/phpunit": "~4.8.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"JosefGlatz\\HideSysTemplate\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "hide_sys_template"
+		}
+	}
+}
+

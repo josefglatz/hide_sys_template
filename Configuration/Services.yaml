@@ -1,0 +1,7 @@
+services:
+  JosefGlatz\HideSysTemplate\EventListener\RenderFlashMessage:
+    tags:
+      - name: event.listener
+        identifier: 'josefglatz/hide-sys-template/renderFlashMessage'
+        event: TYPO3\CMS\Backend\Controller\Event\BeforeFormEnginePageInitializedEvent
+        before: 'legacy-slot'
