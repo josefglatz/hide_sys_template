@@ -23,9 +23,9 @@
         "php": "^8.0",
         "psr/http-factory": "*",
         "psr/http-message": "*",
-        "typo3/cms-backend": "^11.5 || ^12.4",
-        "typo3/cms-core": "^11.5 || ^12.4",
-        "typo3/cms-tstemplate": "^11.5 || ^12.4"
+        "typo3/cms-backend": "^12.4",
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-tstemplate": "^12.4"
     },
     "require-dev": {
         "armin/editorconfig-cli": "^1.5",
