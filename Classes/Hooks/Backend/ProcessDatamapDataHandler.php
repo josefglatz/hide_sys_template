@@ -26,6 +26,7 @@ use TYPO3\CMS\Core\Http\ResponseFactory;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateInformationModuleFunctionController;
 
@@ -54,7 +55,7 @@ class ProcessDatamapDataHandler
                     ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.description')),
                 htmlspecialchars($this->getLanguageService()
                     ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.title')),
-                FlashMessage::ERROR,
+                ContextualFeedbackSeverity::ERROR,
                 true
             );
             $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
@@ -93,7 +94,7 @@ class ProcessDatamapDataHandler
                 'management tool like GIT. It\'s better to provide TSconfig for specific pages as files in your sitepackage ' .
                 'and include it through tsconfig_includes!',
                 'Please consider NOT saving PageTSConfig directly to database!',
-                FlashMessage::WARNING,
+                ContextualFeedbackSeverity::WARNING,
                 true
             );
             $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);

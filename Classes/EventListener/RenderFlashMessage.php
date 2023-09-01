@@ -25,6 +25,7 @@ use TYPO3\CMS\Core\Http\PropagateResponseException;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -78,7 +79,7 @@ class RenderFlashMessage
                 ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.description')),
             htmlspecialchars($this->getLanguageService()
                 ->sL('LLL:EXT:hide_sys_template/Resources/Private/Language/locallang.xlf:hooks.dataHandler.prevent.sys_template.title')),
-            FlashMessage::ERROR,
+            ContextualFeedbackSeverity::ERROR,
             true
         );
         $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
