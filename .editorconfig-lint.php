@@ -7,7 +7,6 @@ return \Symfony\Component\Finder\Finder::create()
     ->ignoreVCSIgnored(true)
     ->exclude([
         'Resources/Public/JavaScript',
-        'Resources/Public/Icons',
-        'README.md'
+        'Resources/Public/Icons'
     ])
-    ;
+    ->notName('README.md');
