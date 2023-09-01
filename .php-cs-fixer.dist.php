@@ -1,8 +1,4 @@
 <?php
-declare(strict_types=1);
-
-
-use TYPO3\CodingStandards\CsFixerConfig;
 
 $header = <<<EOM
 This file is part of the TYPO3 CMS extension "josefglatz/hide-sys-template".
@@ -19,13 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 EOM;
 
-$config = CsFixerConfig::create()
-    ->setHeader(sprintf($header, date('Y')), true)
-    ->addRules([
-        'native_function_invocation' => true,
-        'no_superfluous_phpdoc_tags' => ['allow_mixed' => true],
-    ]);
-$config->getFinder()->in(__DIR__)
-    ->ignoreVCSIgnored(true);
-
+$config = \TYPO3\CodingStandards\CsFixerConfig::create()
+    ->setHeader(sprintf($header, date('Y')), true);
+$config->getFinder()->in(__DIR__)->ignoreVCSIgnored(true);
 return $config;

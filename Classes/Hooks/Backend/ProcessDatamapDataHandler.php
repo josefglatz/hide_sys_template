@@ -28,7 +28,6 @@ use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateInformationModuleFunctionController;
 
 /**
  * Class ProcessDatamapDataHandler
@@ -64,7 +63,7 @@ class ProcessDatamapDataHandler
             $redirectUri = (string)GeneralUtility::makeInstance(UriBuilder::class)->buildUriFromRoute(
                 'web_ts',
                 [
-                    'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid']
+                    'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid'],
                 ]
             );
             @ob_end_clean();
