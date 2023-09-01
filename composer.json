@@ -54,13 +54,14 @@
         }
     },
     "scripts": {
+        "fix:editorconfig": "@lint:editorconfig --fix",
         "lint": [
             "@lint:composer",
             "@lint:editorconfig",
             "@lint:php"
         ],
         "lint:composer": "@composer normalize --no-check-lock --no-update-lock",
-        "lint:editorconfig": "ec --finder-config .editorconfig-lint.php --fix",
+        "lint:editorconfig": "ec --finder-config .editorconfig-lint.php",
         "lint:php": "php-cs-fixer fix"
     }
 }

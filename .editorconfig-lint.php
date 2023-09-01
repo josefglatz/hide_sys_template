@@ -8,5 +8,6 @@ return \Symfony\Component\Finder\Finder::create()
     ->exclude([
         'Resources/Public/JavaScript',
         'Resources/Public/Icons',
+        'README.md'
     ])
     ;
