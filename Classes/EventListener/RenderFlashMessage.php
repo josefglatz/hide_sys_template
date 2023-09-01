@@ -34,6 +34,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class RenderFlashMessage
 {
+    private ResponseFactoryInterface $responseFactory;
+
     // Inject PSR-17 ResponseFactoryInterface
     public function __construct(ResponseFactoryInterface $responseFactory)
     {
