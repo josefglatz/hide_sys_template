@@ -64,8 +64,7 @@ class ProcessDatamapDataHandler
             $redirectUri = (string)GeneralUtility::makeInstance(UriBuilder::class)->buildUriFromRoute(
                 'web_ts',
                 [
-                    'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid'],
-                    'function' => TypoScriptTemplateInformationModuleFunctionController::class,
+                    'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid']
                 ]
             );
             @ob_end_clean();
