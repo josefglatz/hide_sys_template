@@ -44,4 +44,4 @@ jobs:
       - name: Lint Editorconfig
         run: composer lint:editorconfig
       - name: Lint PHP
-        run: composer lint:php -- --dry-run
+        run: composer lint:php -- --dry-run -vvv
