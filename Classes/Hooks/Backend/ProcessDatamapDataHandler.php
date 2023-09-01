@@ -4,15 +4,19 @@ declare(strict_types=1);
 
 /*
  * This file is part of the TYPO3 CMS extension "josefglatz/hide-sys-template".
- * Copyright (C) 2022 Josef Glatz <typo3@josefglatz.at>
+ *
+ * Copyright (C) 2023 Josef Glatz <typo3@josefglatz.at>
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
@@ -28,7 +32,6 @@ use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateInformationModuleFunctionController;
 
 /**
  * Class ProcessDatamapDataHandler
@@ -65,7 +68,6 @@ class ProcessDatamapDataHandler
                 'web_ts',
                 [
                     'id' => (int)$parentObject->datamap['sys_template']['NEW']['pid'],
-                    'function' => TypoScriptTemplateInformationModuleFunctionController::class,
                 ]
             );
             @ob_end_clean();

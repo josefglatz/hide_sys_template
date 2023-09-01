@@ -21,6 +21,7 @@ jobs:
         with:
           php-version: 8.2
           tools: composer:v2, composer-require-checker, composer-unused
+          coverage: none
 
       # Validation
       - name: Validate composer.json
@@ -35,12 +36,12 @@ jobs:
         run: composer-require-checker check --config-file dependency-checker.json
       - run: composer install --no-progress
       - name: Check for unused dependencies
-        run: composer-unused
+        run: composer-unused --excludePackage=typo3/cms-tstemplate
 
       # Linting
       - name: Lint composer.json
         run: composer lint:composer -- --dry-run
       - name: Lint Editorconfig
-        run: .Build/bin/ec --finder-config .editorconfig-lint.php
+        run: composer lint:editorconfig
       - name: Lint PHP
-        run: composer lint:php -- --dry-run
+        run: composer lint:php -- --dry-run -vvv
