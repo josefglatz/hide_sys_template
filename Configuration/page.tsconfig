@@ -1,0 +1,2 @@
+# First level of restriction
+mod.web_list.deniedNewTables := addToList(sys_template)
