@@ -31,7 +31,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
  * This is the event listener class which prevents TYPO3 backend users to
  * create sys_template records in the TYPO3 database.
- * @author
+ * @author Josef Glatz <typo3@josefglatz.at>
  */
 class RenderFlashMessage
 {
