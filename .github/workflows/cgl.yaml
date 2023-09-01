@@ -36,7 +36,7 @@ jobs:
         run: composer-require-checker check --config-file dependency-checker.json
       - run: composer install --no-progress
       - name: Check for unused dependencies
-        run: composer-unused
+        run: composer-unused --excludePackage=typo3/cms-tstemplate
 
       # Linting
       - name: Lint composer.json
