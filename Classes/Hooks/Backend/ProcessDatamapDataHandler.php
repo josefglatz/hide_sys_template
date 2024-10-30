@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * This file is part of the TYPO3 CMS extension "josefglatz/hide-sys-template".
  *
- * Copyright (C) 2023 Josef Glatz <typo3@josefglatz.at>
+ * Copyright (C) 2024 Josef Glatz <typo3@josefglatz.at>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,69 +1,69 @@
 {
-    "name": "josefglatz/hide-sys-template",
-    "description": "Make sys_template records vanish everywhere (Prevents TYPO3 admins from using sys_template database records)",
-    "license": [
-        "GPL-2.0-or-later"
-    ],
-    "type": "typo3-cms-extension",
-    "authors": [
-        {
-            "name": "Josef Glatz",
-            "email": "typo3@josefglatz.at",
-            "homepage": "https://www.josefglatz.at",
-            "role": "Maintainer"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/josefglatz/hide-sys-template/issues",
-        "source": "https://github.com/josefglatz/hide-sys-template.git",
-        "docs": "https://docs.typo3.org/p/josefglatz/hide-sys-template/main/en-us/",
-        "rss": "https://github.com/josefglatz/hide-sys-template/releases.atom"
-    },
-    "require": {
-        "php": "^8.2",
-        "psr/http-factory": "*",
-        "psr/http-message": "*",
-        "typo3/cms-backend": "^12.4",
-        "typo3/cms-core": "^12.4",
-        "typo3/cms-tstemplate": "^12.4"
-    },
-    "require-dev": {
-        "armin/editorconfig-cli": "^1.5",
-        "eliashaeussler/php-cs-fixer-config": "^1.2",
-        "ergebnis/composer-normalize": "^2.28",
-        "friendsofphp/php-cs-fixer": "v3.25.0",
-        "typo3/coding-standards": "^0.7.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "JosefGlatz\\HideSysTemplate\\": "Classes/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "typo3/cms-composer-installers": true,
-            "typo3/class-alias-loader": true,
-            "ergebnis/composer-normalize": true
-        },
-        "bin-dir": ".Build/bin",
-        "sort-packages": true,
-        "vendor-dir": ".Build/vendor"
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "hide_sys_template",
-            "web-dir": ".Build/web"
-        }
-    },
-    "scripts": {
-        "fix:editorconfig": "@lint:editorconfig --fix",
-        "lint": [
-            "@lint:composer",
-            "@lint:editorconfig",
-            "@lint:php"
-        ],
-        "lint:composer": "@composer normalize --no-check-lock --no-update-lock",
-        "lint:editorconfig": "ec --finder-config .editorconfig-lint.php",
-        "lint:php": "php-cs-fixer fix"
-    }
+	"name": "josefglatz/hide-sys-template",
+	"description": "Make sys_template records vanish everywhere (Prevents TYPO3 admins from using sys_template database records)",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"type": "typo3-cms-extension",
+	"authors": [
+		{
+			"name": "Josef Glatz",
+			"email": "typo3@josefglatz.at",
+			"homepage": "https://www.josefglatz.at",
+			"role": "Maintainer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/josefglatz/hide-sys-template/issues",
+		"source": "https://github.com/josefglatz/hide-sys-template.git",
+		"docs": "https://docs.typo3.org/p/josefglatz/hide-sys-template/main/en-us/",
+		"rss": "https://github.com/josefglatz/hide-sys-template/releases.atom"
+	},
+	"require": {
+		"php": "^8.2",
+		"psr/http-factory": "*",
+		"psr/http-message": "*",
+		"typo3/cms-backend": "^12.4",
+		"typo3/cms-core": "^12.4",
+		"typo3/cms-tstemplate": "^12.4"
+	},
+	"require-dev": {
+		"armin/editorconfig-cli": "^1.5",
+		"eliashaeussler/php-cs-fixer-config": "^1.2",
+		"ergebnis/composer-normalize": "^2.28",
+		"friendsofphp/php-cs-fixer": "3.25.0",
+		"typo3/coding-standards": "^0.7.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"JosefGlatz\\HideSysTemplate\\": "Classes/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true,
+			"typo3/class-alias-loader": true,
+			"typo3/cms-composer-installers": true
+		},
+		"bin-dir": ".Build/bin",
+		"sort-packages": true,
+		"vendor-dir": ".Build/vendor"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "hide_sys_template",
+			"web-dir": ".Build/web"
+		}
+	},
+	"scripts": {
+		"fix:editorconfig": "@lint:editorconfig --fix",
+		"lint": [
+			"@lint:composer",
+			"@lint:editorconfig",
+			"@lint:php"
+		],
+		"lint:composer": "@composer normalize --no-check-lock --no-update-lock",
+		"lint:editorconfig": "ec --finder-config .editorconfig-lint.php",
+		"lint:php": "php-cs-fixer fix"
+	}
 }
