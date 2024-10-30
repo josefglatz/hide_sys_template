@@ -3,7 +3,7 @@
 /*
  * This file is part of the TYPO3 CMS extension "josefglatz/hide-sys-template".
  *
- * Copyright (C) 2023 Josef Glatz <typo3@josefglatz.at>
+ * Copyright (C) 2024 Josef Glatz <typo3@josefglatz.at>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,11 +22,11 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'hide_sys_template - A life without sys_template database records',
     'description' => 'Make sys_template records vanish everywhere (Prevents TYPO3 admins from using sys_template database records)',
-    'version' => '4.0.0',
+    'version' => '4.0.1',
     'state' => 'stable',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-12.4.99',
+            'typo3' => '12.4.0-13.4.99',
         ],
     ],
     'autoload' => [

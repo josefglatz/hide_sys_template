@@ -66,9 +66,14 @@ composer require josefglatz/professional-aspects --with-dependencies
 1. Install the extension
 2. There is no second step. That's all.
 
-But you might add your sys_template "record" via TYPO3 hook. I prefer
-using `b13/bolt` as a counterpart to this
-extension. Both extensions complement each other perfectly.
+**For TYPO3 12.4 LTS:** But you might add your sys_template "record" via TYPO3
+hook. I prefer  using `b13/bolt` as a counterpart to this extension. Both
+extensions complement each other perfectly.
+
+**Update for TYPO3 13.4 LTS:** You can use a sys_template record free TYPO3
+instance without using a 3rd-party TYPO3 extension! Just use the new site sets
+and install this extension to prevent your colleagues from adding bored
+sys_template records! You will sleep better ;-]
 
 ## :star: License
 
